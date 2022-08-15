@@ -3,7 +3,7 @@
 function curs()
     
 {
-    $cache_time_out = 1; // Время жизни кэша в секундах
+    $cache_time_out = 10800; // Время жизни кэша в секундах
     $file_currency_cache = 'currency.txt'; // Файл кэша
 
     if (!is_file($file_currency_cache) || filemtime($file_currency_cache) < (time() - $cache_time_out)) {
